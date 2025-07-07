@@ -25,7 +25,7 @@ app.post('/api/start-bot', (req, res) => {
   exec(
     `docker rm -f ${DOCKER_NAME} 2>/dev/null;` +
     `docker build -t martingale-agent-image ${AGENT_PATH} && ` +
-    `docker run -d --name ${DOCKER_NAME} --env-file ${ENV_FILE} -v ${AGENT_PATH}:/app -w /app martingale-agent-image node main.js`,
+    `docker run -d --name ${DOCKER_NAME} --env-file ${ENV_FILE} -v ${AGENT_PATH}:/app -w /app martingale-agent-image node martingale_agent.js`,
     (error, stdout, stderr) => {
       if (error) return res.status(500).json({ error: stderr });
       res.json({ success: true, container: stdout.trim() });
