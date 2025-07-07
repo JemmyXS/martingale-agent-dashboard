@@ -1,0 +1,8 @@
+{
+  "name": "martingale-agent",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    // 你的依赖
+  }
+}
