@@ -9,7 +9,6 @@ martingale-agent-dashboard/
 │   └── package.json
 ├── martingale-agent/        # 你的马丁机器人主目录
 │   ├── Dockerfile
-│   ├── main.js
 │   └── package.json
 ├── README.md
 
@@ -37,7 +36,7 @@ npm start
 
 ### 3. 配置 martingale-agent
 
-请确保 martingale-agent 目录下有 main.js、package.json、Dockerfile，并能被直接 `node main.js` 启动。
+请确保 martingale-agent 目录下有 package.json、Dockerfile
 
 ### 4. 使用面板
 
